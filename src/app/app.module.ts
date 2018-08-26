@@ -11,10 +11,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // Services
 import { DeseosService } from '../providers/deseos.service';
 
+// Pipes
+import { FiltroCompletadoPipe } from '../pipes/filtro-completado.pipe';
+
 // Components
 import { PendientesPage } from '../pages/pendientes/pendientes.component';
 import { TerminadasPage } from '../pages/terminadas/terminadas.component';
 import { AgregarPage } from '../pages/agregar/agregar.component';
+import { ListasComponent } from '../components/listas/listas.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,9 @@ import { AgregarPage } from '../pages/agregar/agregar.component';
     TabsPage,
     PendientesPage,
     TerminadasPage,
-    AgregarPage
+    AgregarPage,
+    FiltroCompletadoPipe,
+    ListasComponent
   ],
   imports: [
     BrowserModule,

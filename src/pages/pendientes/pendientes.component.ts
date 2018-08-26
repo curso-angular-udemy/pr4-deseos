@@ -1,6 +1,5 @@
 import { Component } from "@angular/core";
 import { DeseosService } from '../../providers/deseos.service';
-import { Lista } from '../../models/lista.model';
 import { AgregarPage } from '../agregar/agregar.component';
 import { NavController, AlertController } from "ionic-angular";
 
@@ -16,10 +15,6 @@ export class PendientesPage{
               private navCtrl: NavController,
               private alertCtrl: AlertController){
 
-  }
-
-  listaSeleccionada(lista: Lista){
-    console.log(lista)
   }
 
   agregarLista(){
@@ -45,4 +40,5 @@ export class PendientesPage{
     })
     alerta.present();
   }
+
 }
